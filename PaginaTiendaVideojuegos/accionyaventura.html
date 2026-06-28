@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Acción y Aventura - Tienda de Videojuegos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+        .game-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+        .game-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+        .game-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+        .game-body {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 0 0 10px 10px;
+        }
+        .game-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+        }
+    </style>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<header class="bg-dark text-white p-3">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div class="logo">
+            <img src="imagenes/logo.png" alt="Tienda de Videojuegos" class="img-fluid" style="max-width: 50px;" />
+        </div>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link text-white" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="pagina02.html">Catálogo</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="ofertas.html">Ofertas</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="Reseñas.html">Reseñas</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="Noticias.html">Noticias</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="container py-5">
+        <h2 class="display-4 text-center mb-4">Acción y Aventura</h2>
+
+        <div class="row">
+            <!-- Columna 1 -->
+            <div class="col-md-4">
+                <!-- God of War Ragnarok -->
+                <div class="game-card mb-4">
+                    <img src="imagenes/accionyaventura/Accion1.jpg" class="game-img" alt="God of War Ragnarok" />
+                    <div class="game-body">
+                        <h5 class="game-title">God of War Ragnarok</h5>
+                        <p>Kratos regresa para enfrentar un nuevo ciclo de mitología, explorando las profundidades de los dioses y los monstruos.</p>
+                        <a href="AccionyAventura/godofwar.html" class="btn btn-primary d-block mt-3">Ver más</a>
+                    </div>
+                </div>
+
+                <!-- The Last of Us 2 Remastered -->
+                <div class="game-card">
+                    <img src="imagenes/accionyaventura/Accion4.png" class="game-img" alt="The Last Of Us 2 Remastered" />
+                    <div class="game-body">
+                        <h5 class="game-title">The Last Of Us 2: Remastered</h5>
+                        <p class="text-center">Sumérgete en un mundo postapocalíptico donde Ellie enfrenta sus propios demonios y una implacable búsqueda de justicia, mientras la supervivencia y el sacrificio se entrelazan en cada paso.</p>
+                        <a href="AccionyAventura/tlou2r.html" class="btn btn-primary d-block mt-3">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna 2 -->
+            <div class="col-md-4">
+                <!-- Spider-Man 2 -->
+                <div class="game-card mb-4">
+                    <img src="imagenes/accionyaventura/Accion2.jpg" class="game-img" alt="Spider-Man 2" />
+                    <div class="game-body">
+                        <h5 class="game-title">Spider-Man 2</h5>
+                        <p>Únete a Peter Parker y Miles Morales en una nueva aventura para salvar Nueva York de una nueva amenaza.</p>
+                        <a href="AccionyAventura/spiderman2.html" class="btn btn-primary d-block mt-3">Ver más</a>
+                    </div>
+                </div>
+
+                <!-- The Legend of Zelda: Tears of the Kingdom -->
+                <div class="game-card">
+                    <img src="imagenes/accionyaventura/Accion5.jpg" class="game-img" alt="The Legend of Zelda: Tears of the Kingdom" />
+                    <div class="game-body">
+                        <h5 class="game-title">The Legend of Zelda: Tears of the Kingdom</h5>
+                        <p class="text-center">Embárcate en una épica travesía por un Hyrule renovado, donde Link debe dominar antiguos poderes y enfrentar una amenaza que acecha desde los cielos. Misterios, sacrificios y esperanza se entrelazan en cada rincón del reino.</p>
+                        <a href="AccionyAventura/zelda.html" class="btn btn-primary d-block mt-3">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna 3 -->
+            <div class="col-md-4">
+                <!-- Red Dead Redemption 2 -->
+                <div class="game-card">
+                    <img src="imagenes/accionyaventura/Accion3.jpg" class="game-img" alt="Red Dead Redemption 2" />
+                    <div class="game-body">
+                        <h5 class="game-title">Red Dead Redemption 2</h5>
+                        <p>Vive la historia de Arthur Morgan en el lejano Oeste, mientras enfrenta dilemas morales y aventuras épicas.</p>
+                        <a href="AccionyAventura/rdr2.html" class="btn btn-primary d-block mt-3">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- fin row -->
+    </div> <!-- fin container -->
+</main>
+
+<footer>
+    <div class="container text-center py-3">
+        <p>&copy; 2025 Tienda de Videojuegos. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

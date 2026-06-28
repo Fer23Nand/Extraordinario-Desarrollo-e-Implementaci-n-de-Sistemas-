@@ -1,0 +1,198 @@
+/* =============================================
+   TIENDA DE VIDEOJUEGOS - Retoque visual global
+   Mantiene Bootstrap + estructura original
+   ============================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&display=swap');
+
+/* === HEADER === */
+header.bg-dark {
+  background: linear-gradient(90deg, #1a1a2e 0%, #16213e 100%) !important;
+  border-bottom: 2px solid #6d28d9;
+  box-shadow: 0 2px 12px rgba(109,40,217,0.25);
+}
+
+header .logo img {
+  filter: drop-shadow(0 0 6px rgba(167,139,250,0.5));
+}
+
+header .nav-link {
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  transition: color 0.15s;
+  padding: 0.4rem 0.75rem !important;
+  border-radius: 6px;
+}
+
+header .nav-link:hover {
+  color: #a78bfa !important;
+  background: rgba(167,139,250,0.1);
+}
+
+header .form-control {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(167,139,250,0.3);
+  color: #fff;
+  border-radius: 8px 0 0 8px;
+  font-size: 0.85rem;
+}
+
+header .form-control::placeholder { color: rgba(255,255,255,0.4); }
+header .form-control:focus {
+  background: rgba(255,255,255,0.1);
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 3px rgba(124,58,237,0.2);
+  color: #fff;
+}
+
+header .btn-outline-light {
+  border-radius: 0 8px 8px 0;
+  border-color: rgba(167,139,250,0.4);
+  font-size: 0.85rem;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+header .btn-outline-light:hover {
+  background: #7c3aed;
+  border-color: #7c3aed;
+}
+
+/* === BODY === */
+body {
+  background-color: #f0f2f5 !important;
+}
+
+/* === SECTION TITLES === */
+.section-title {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 2.2rem !important;
+  color: #1e1b4b !important;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #7c3aed;
+  border-radius: 2px;
+  margin: 6px auto 0;
+}
+
+.game-category h3 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.4rem;
+  color: #3730a3;
+  border-left: 4px solid #7c3aed;
+  padding-left: 10px;
+  text-align: left !important;
+}
+
+/* === CARDS === */
+.card {
+  border: none !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08) !important;
+  transition: transform 0.2s, box-shadow 0.2s !important;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 8px 24px rgba(109,40,217,0.15) !important;
+}
+
+.card img {
+  transition: transform 0.3s;
+}
+
+.card:hover img {
+  transform: scale(1.03);
+}
+
+.card-body {
+  background: #fff;
+  padding: 1rem !important;
+}
+
+.card-title {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.05rem;
+  color: #1e1b4b;
+  margin-bottom: 0.6rem;
+}
+
+/* === BOTONES CATEGORIA === */
+.category-buttons a.btn {
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  padding: 8px 18px;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.category-buttons a.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Botón primario más oscuro/vibrante */
+.btn-primary {
+  background: #6d28d9 !important;
+  border-color: #6d28d9 !important;
+}
+.btn-primary:hover {
+  background: #5b21b6 !important;
+  border-color: #5b21b6 !important;
+}
+
+/* === FOOTER === */
+footer.bg-dark, footer {
+  background: linear-gradient(90deg, #1a1a2e 0%, #16213e 100%) !important;
+  border-top: 2px solid #6d28d9;
+  color: rgba(255,255,255,0.7) !important;
+  font-size: 0.82rem;
+  padding: 1.2rem 0 !important;
+}
+
+footer p { margin: 0; }
+
+/* === PÁGINAS DE LOGIN / REGISTRO === */
+.login-card, .registro-card {
+  border: 1px solid #ede9fe !important;
+  box-shadow: 0 8px 32px rgba(109,40,217,0.12) !important;
+}
+
+.login-card h2, .registro-card h2 {
+  font-family: 'Rajdhani', sans-serif;
+  color: #1e1b4b !important;
+  font-size: 1.8rem;
+}
+
+.form-control:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 3px rgba(124,58,237,0.15);
+}
+
+/* === OFFER CARDS === */
+.offer-card {
+  border-radius: 12px !important;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08) !important;
+  transition: transform 0.2s, box-shadow 0.2s !important;
+}
+
+.offer-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 8px 24px rgba(109,40,217,0.15) !important;
+}
+
+/* === PÁGINAS DE PRODUCTO INDIVIDUAL === */
+h1, h2.display-4 {
+  font-family: 'Rajdhani', sans-serif;
+}
+

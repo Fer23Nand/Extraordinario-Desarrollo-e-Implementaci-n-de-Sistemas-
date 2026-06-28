@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ofertas - Tienda de Videojuegos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    .offer-card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+
+    .offer-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .offer-img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .offer-body {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 0 0 10px 10px;
+    }
+
+    .offer-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #333;
+      text-align: center;
+    }
+
+    .offer-description {
+      text-align: center;
+      color: #555;
+    }
+
+    footer {
+      background-color: #1f1f1f;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+  <header class="bg-dark text-white p-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="logo">
+        <img src="imagenes/logo.png" alt="Tienda de Videojuegos" class="img-fluid" style="max-width: 50px;" />
+      </div>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="pagina02.html">Catálogo</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="ofertas.html">Ofertas</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="Reseñas.html">Reseñas</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="Noticias.html">Noticias</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container py-5">
+      <h2 class="display-4 text-center mb-5">Ofertas Especiales</h2>
+      <div class="row g-4">
+
+        <!-- Red Dead Redemption 1 -->
+        <div class="col-md-3">
+          <div class="offer-card">
+            <img src="imagenes/ofertas/Oferta1.jpg" class="offer-img" alt="RDR1">
+            <div class="offer-body">
+              <h5 class="offer-title">Red Dead Redemption 1</h5>
+              <p class="offer-description">Disfruta del clásico western en su mejor versión, ahora con descuento especial.</p>
+              <a href="Ofertas/rdr.html" class="btn btn-primary d-block mt-3">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Zelda Ocarina of Time -->
+        <div class="col-md-3">
+          <div class="offer-card">
+            <img src="imagenes/ofertas/Oferta2.jpg" class="offer-img" alt="Zelda Ocarina of Time">
+            <div class="offer-body">
+              <h5 class="offer-title">Zelda: Ocarina of Time</h5>
+              <p class="offer-description">El legendario juego de Zelda con una oferta que no puedes dejar pasar.</p>
+              <a href="Ofertas/OcarinaOfTime.html" class="btn btn-primary d-block mt-3">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Yakuza 0 -->
+        <div class="col-md-3">
+          <div class="offer-card">
+            <img src="imagenes/ofertas/Oferta3.jpg" class="offer-img" alt="Yakuza 0">
+            <div class="offer-body">
+              <h5 class="offer-title">Yakuza 0</h5>
+              <p class="offer-description">Sumérgete en el crimen japonés con esta aventura épica y gran descuento.</p>
+              <a href="Ofertas/Yakuza0.html" class="btn btn-primary d-block mt-3">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dragon Ball FighterZ -->
+        <div class="col-md-3">
+          <div class="offer-card">
+            <img src="imagenes/ofertas/Oferta4.jpg" class="offer-img" alt="Dragon Ball FighterZ">
+            <div class="offer-body">
+              <h5 class="offer-title">Dragon Ball FighterZ</h5>
+              <p class="offer-description">Vive las batallas de Dragon Ball con una oferta que no te puedes perder.</p>
+              <a href="Ofertas/dbfz.html" class="btn btn-primary d-block mt-3">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Tienda de Videojuegos. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

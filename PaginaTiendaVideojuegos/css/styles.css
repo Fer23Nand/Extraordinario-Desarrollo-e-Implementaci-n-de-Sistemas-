@@ -1,0 +1,49 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #343a40;
+}
+
+header .nav-link {
+    color: white;
+}
+
+header .nav-link:hover {
+    color: #ffd700;
+}
+
+/* Carousel Styles */
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40;
+    color: white;
+}
+
+/* Button Styles */
+.btn {
+    margin: 10px;
+}
+
+/* Card Styles */
+.card {
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+}
+
+.card-text {
+    font-size: 1rem;
+}
