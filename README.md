@@ -1,7 +1,7 @@
 # Tienda de Videojuegos
 
 Proyecto individual - Materia: Desarrollo e Implementación de Sistemas  
-Entrega: domingo 28 de junio de 2025 - Docente: Fidel Bojorquez Solis
+Entrega: domingo 28 de junio de 2026 - Docente: Fidel Bojorquez Solis
 
 ---
 
